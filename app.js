@@ -3,9 +3,18 @@
 var express = require('express');
 
 var app = express();
+app.use('/static', express.static(__dirname+'/app'));
 
 app.get('/', function(req, res) {
   res.status(200).send('Hello, world!');
+});
+
+app.get('/iw',function(req,res){
+  var options = {
+   root: __dirname + '/views/',
+   dotfiles: 'deny'
+ };
+  res.sendFile('iw.html', options);
 });
 
 // Start the server

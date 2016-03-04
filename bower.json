@@ -1,0 +1,21 @@
+{
+  "name": "play-slack",
+  "description": "Simple Hello World Node.js sample for Google App Engine",
+  "authors": [
+    "KK"
+  ],
+  "license": "Apache Version 2.0",
+  "homepage": "https://github.com/keke/play-slack",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "^0.14.7"
+  }
+}
