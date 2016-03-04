@@ -4,6 +4,7 @@ var IwButton = React.createClass({
   },
   handleClick: function(){
     console.log('button clicked ' + this.state.text);
+    $.post('/iw-call',{text: this.state.text});
   },
   handleTextChange: function(e){
     this.setState({text: e.target.value});
