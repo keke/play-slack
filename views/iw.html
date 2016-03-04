@@ -5,18 +5,12 @@
   <title>Test Incoming Webhook</title>
   <script src="static/bower_components/react/react.js"></script>
   <script src="static/bower_components/react/react-dom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+
 </head>
 <body>
   <div id="example"></div>
-  <script type="text/babel">
-    ReactDOM.render(
-      <div id="test">
-      <button>Post</button>
-      <input name="text"></input>
-      </div>,
-      document.getElementById('example')
-    );
-  </script>
+  <script type="text/babel" src="static/js/iw-button.js"></script>
 </body>
 </html>
